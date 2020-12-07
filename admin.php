@@ -62,7 +62,6 @@
                         <thead>
                             <tr>
                                 <th>Batch ID</th>
-                                <th>QR-Code</th>
                                 <th>Farm Inspector</th>
                                 <th>Harvester</th>
                                 <th>Exporter</th>
@@ -85,7 +84,7 @@
     <div class="row">
         <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="white-box">
-                <h3 class="box-title">Your Address <i class="fa fa-qrcode fa-2x text-success"></i></h3>
+                <h3 class="box-title">Your Address</h3>
                 <ul class="list-inline two-part">
                     <li class="text-right" id="currentUserAddress">0x0000000000000000000000000000000000000000</li>
                 </ul>
@@ -93,7 +92,7 @@
         </div>
         <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="white-box">
-                <h3 class="box-title">Storage Contract Address <i class="fa fa-qrcode fa-2x text-danger"></i></h3>
+                <h3 class="box-title">Storage Contract Address</h3>
                 <ul class="list-inline two-part">
                     <li class="text-right" id="storageContractAddress">0x0000000000000000000000000000000000000000</li>
                 </ul>
@@ -103,7 +102,7 @@
     <div class="row">
         <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="white-box">
-                <h3 class="box-title">Coffee Supplychain Contract Address <i class="fa fa-qrcode fa-2x text-info"></i></h3>
+                <h3 class="box-title">Tea Supplychain Contract Address </h3>
                 <ul class="list-inline two-part">
                     <li class="text-right" id="coffeeSupplychainContractAddress">0x0000000000000000000000000000000000000000</li>
                 </ul>
@@ -111,7 +110,7 @@
         </div>
         <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="white-box">
-                <h3 class="box-title">User Contract Address <i class="fa fa-qrcode fa-2x text-info"></i></h3>
+                <h3 class="box-title">User Contract Address</h3>
                 <ul class="list-inline two-part">
                     <li class="text-right" id="userContractAddress">0x0000000000000000000000000000000000000000</li>
                 </ul>
@@ -425,7 +424,7 @@
 
             if (elem.status == "FARM_INSPECTION") {
                 tr = `<tr>
-                ` + commBatchTd + commQrTd + `
+                ` + commBatchTd +  `
                 <td><span class="label label-warning font-weight-100">Processing</span></td>
                 <td><span class="label label-danger font-weight-100">Not Available</span> </td>
                 <td><span class="label label-danger font-weight-100">Not Available</span> </td>
@@ -435,7 +434,7 @@
             </tr>`;
             } else if (elem.status == "HARVESTER") {
                 tr = `<tr>
-                ` + commBatchTd + commQrTd + `
+                ` + commBatchTd +  `
                 <td><span class="label label-success font-weight-100">Completed</span></td>
                 <td><span class="label label-warning font-weight-100">Processing</span> </td>
                 <td><span class="label label-danger font-weight-100">Not Available</span> </td>
@@ -445,7 +444,7 @@
             </tr>`;
             } else if (elem.status == "EXPORTER") {
                 tr = `<tr>
-                ` + commBatchTd + commQrTd + `
+                ` + commBatchTd +  `
                 <td><span class="label label-success font-weight-100">Completed</span></td>
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
                 <td><span class="label label-warning font-weight-100">Processing</span> </td>
@@ -455,7 +454,7 @@
             </tr>`;
             } else if (elem.status == "IMPORTER") {
                 tr = `<tr>
-                ` + commBatchTd + commQrTd + `
+                ` + commBatchTd +  `
                 <td><span class="label label-success font-weight-100">Completed</span></td>
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
@@ -465,7 +464,7 @@
             </tr>`;
             } else if (elem.status == "PROCESSOR") {
                 tr = `<tr>
-                ` + commBatchTd + commQrTd + `
+                ` + commBatchTd +  `
                 <td><span class="label label-success font-weight-100">Completed</span></td>
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
@@ -475,7 +474,7 @@
             </tr>`;
             } else if (elem.status == "DONE") {
                 tr = `<tr>
-                ` + commBatchTd + commQrTd + `
+                ` + commBatchTd +   `
                 <td><span class="label label-success font-weight-100">Completed</span></td>
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
@@ -483,7 +482,7 @@
                 <td><span class="label label-success font-weight-100">Completed</span> </td>
                 ` + commActionTd + `
             </tr>`;
-            }
+            }   
 
             table += tr;
         }

@@ -131,7 +131,7 @@ function buildCultivationTable(finalEvents)
 		
 		if (elem.status == "FARM_INSPECTION") {
             tr = `<tr>
-            		`+commBatchTd+commQrTd+`
+            		`+commBatchTd+`
                     <td><span class="label label-warning font-weight-100">Processing</span></td>
                     <td><span class="label label-danger font-weight-100">Not Available</span> </td>
                     <td><span class="label label-danger font-weight-100">Not Available</span> </td>
@@ -141,7 +141,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "HARVESTER") {
             tr = `<tr>
-                    `+commBatchTd+commQrTd+`
+                    `+commBatchTd+`
                     <td><span class="label label-success font-weight-100">Completed</span></td>
                     <td><span class="label label-warning font-weight-100">Processing</span> </td>
                     <td><span class="label label-danger font-weight-100">Not Available</span> </td>
@@ -151,7 +151,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "EXPORTER") {
             tr = `<tr>
-                    `+commBatchTd+commQrTd+`
+                    `+commBatchTd+`
                     <td><span class="label label-success font-weight-100">Completed</span></td>
                     <td><span class="label label-success font-weight-100">Completed</span> </td>
                     <td><span class="label label-warning font-weight-100">Processing</span> </td>
@@ -161,7 +161,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "IMPORTER") {
             tr = `<tr>
-                    `+commBatchTd+commQrTd+`
+                    `+commBatchTd+`
                     <td><span class="label label-success font-weight-100">Completed</span></td>
                     <td><span class="label label-success font-weight-100">Completed</span> </td>
                     <td><span class="label label-success font-weight-100">Completed</span> </td>
@@ -171,7 +171,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "PROCESSOR") {
             tr = `<tr>
-                    `+commBatchTd+commQrTd+`
+                    `+commBatchTd+`
                     <td><span class="label label-success font-weight-100">Completed</span></td>
                     <td><span class="label label-success font-weight-100">Completed</span> </td>
                     <td><span class="label label-success font-weight-100">Completed</span> </td>
@@ -181,7 +181,7 @@ function buildCultivationTable(finalEvents)
                 </tr>`;
         } else if (elem.status == "DONE") {
             tr = `<tr>
-                    `+commBatchTd+commQrTd+`
+                    `+commBatchTd+`
                     <td><span class="label label-success font-weight-100">Completed</span></td>
                     <td><span class="label label-success font-weight-100">Completed</span> </td>
                     <td><span class="label label-success font-weight-100">Completed</span> </td>

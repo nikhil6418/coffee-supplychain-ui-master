@@ -731,8 +731,8 @@
                                         <input type="text" class="form-control" id="InspectorId" name="inspectorId" placeholder="inspector id number" data-parsley-required="true">
                                     </div>   -->
                             <div class="form-group">
-                                <label class="control-label" for="typeOfSeed">Type of Seed</label>
-                                <input type="text" class="form-control" id="typeOfSeed" name="typeOfSeed" placeholder="type of seed" data-parsley-required="true">
+                                <label class="control-label" for="typeOfSeed">Type of Leaves</label>
+                                <input type="text" class="form-control" id="typeOfSeed" name="typeOfSeed" placeholder="type of leaves" data-parsley-required="true">
                             </div>
                             <div class="form-group">
                                 <label class="control-label" for="coffeeFamily">Tea Family</label>

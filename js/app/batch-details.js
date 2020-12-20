@@ -219,7 +219,7 @@ function buildFarmInspectionBlock(result){
                                     <td>`+coffeeFamily+` <i class="fa fa-check-circle verified_info"></i></td>
                                   </tr>
                                   <tr>
-                                    <td><b>Type of Seeds:</b></td>
+                                    <td><b>Type of leaves:</b></td>
                                     <td>`+typeOfSeed+` <i class="fa fa-check-circle verified_info"></i></td>
                                   </tr>
                                   <tr>
